@@ -1,0 +1,68 @@
+﻿# Header
+menu:
+  首页: /
+  归档: /archives
+
+rss: /atom.xml
+nav: right
+mobile_nav: right
+
+
+
+# Content
+excerpt_link: 阅读全文
+fancybox: true
+
+# 侧边栏位置 left - right -false
+sidebar: right
+#侧边栏内容
+widgets:
+- userinfo
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Background
+# background_image: /images/bg.jpg
+background_title: /images/bg.jpg
+
+#Userinfo
+author: 最快乐的哈噻
+slogan: 自己打败自己是最可悲的失败，自己战胜自己是最可贵的胜利。
+# avatar: /images/code-title.png
+avatar_title: 图片来自网络
+
+# Article code panel: cloud doorframe mac
+highlightPanel: doorframe
+
+#Gitment
+gitment:
+  owner: 
+  repo: 
+  client_id: 
+  client_secret: 
+
+# Miscellaneous
+google_analytics:
+gauges_analytics:
+google_site_verification: 
+baidu_site_verification: 
+favicon: /images/default-avatar.jpeg
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+keywords:
+
