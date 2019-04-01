@@ -1,4 +1,4 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> -->
 
 <script src="/js/jquery-2.0.3.min.js"></script>
 <% if (theme.fancybox){ %>
@@ -8,3 +8,17 @@
 
 <%- js('js/script') %>
 <%- partial('gauges-analytics') %>
+<!-- add calendar widget -->
+<% if (theme.widgets.indexOf('calendar') != -1){ %>
+  <script src="<%- config.root %>js/calendar.js"></script>
+  <script src="<%- config.root %>js/languages.js"></script>
+  <script type="text/javascript">
+    $(function() {
+    <% if (theme.calendar.options){ %>
+      $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>', $.extend(<%- JSON.stringify(theme.calendar.options ) %>, {single:<%= config.calendar.single %>, root:'<%= config.calendar.root %>'});
+    <% }else{ %>
+      $('#calendar').aCalendar('<%= theme.calendar.language || config.language %>',{single:<%= config.calendar.single %>, root:'<%= config.calendar.root %>'});
+    <% } %>
+    });
+  </script>
+<% } %>

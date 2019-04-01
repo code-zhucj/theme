@@ -1,6 +1,6 @@
 ﻿# Antiquity
 
-一个有点古风的Hexo主题，来自一个不会设计不会配色的前端渣渣。
+本款主题主要由<a href="https://github.com/yiluyanxia/hexo-theme-antiquity.git">一路烟霞</a>提供，在此基础上做了一些修改.
 
 
 ## 安装
